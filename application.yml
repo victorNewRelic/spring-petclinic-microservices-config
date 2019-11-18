@@ -39,16 +39,18 @@ management:
   endpoint:
     metrics:
       enabled: true
-    prometheus:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  metrics:
-    export:
-      prometheus:
-        enabled: true
+      # Disabling prometheus
+    # prometheus:
+    #   enabled: true
+  # endpoints:
+  #   web:
+  #     exposure:
+  #       include: '*'
+# Disabling prometheus
+  # metrics:
+  #   export:
+  #     prometheus:
+  #       enabled: true
 
 ---
 spring:
